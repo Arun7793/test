@@ -3,9 +3,9 @@ pipeline {
 
 
     stages {
-        stage (CHECKOUT) {
+        stage ('CHECKOUT') {
             steps {
-                sh 'git branch: 'main', url: 'https://github.com/Arun7793/test.git''
+                'git branch: 'main', url: 'https://github.com/Arun7793/test.git'
             }
         }
     }
