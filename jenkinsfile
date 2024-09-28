@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage ('CHECKOUT') {
             steps {
-                'git branch: 'main', url: 'https://github.com/Arun7793/test.git'
+                git branch: 'main', changelog: false, poll: false, url: 'https://github.com/Arun7793/test.git'
             }
         }
     }
